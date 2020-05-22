@@ -7,13 +7,13 @@
 {% if user.is_authenticated %}
  <h3> Hi {{ user.username }}!</h3>
  <h2><a href="sw">Любишь конфеты?</a></h2>
-  <p><a href="{% url 'logout' %}">logout</a></p>
+  <h4><a href="{% url 'logout' %}">logout</a></h4>
 {% else %}
-  <p>You are not logged in</p>
-<p>Если у Вас есть аккаунт, то</p>
-  <p><a href="{% url 'login' %}">login</a></p>
-<p>иначе:</p>
-  <p><a href="accounts/signup/">зарегистрируйтесь</a></p>
+  <h4>You are not logged in</h4>
+<h4>Если у Вас есть аккаунт, то</h4>
+  <h4><a href="{% url 'login' %}">login</a></h4>
+<h4>иначе:</h4>
+  <h4><a href="accounts/signup/">зарегистрируйтесь</a></h4>
 
 {% endif %}
 {% endblock %}

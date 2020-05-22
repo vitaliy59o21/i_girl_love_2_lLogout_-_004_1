@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
-    'i_girl_love_s'
+    'i_girl_love_s',
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +122,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Настройки django-bootstrap3
+BOOTSTRAP3 = {
+'include_jquery': True,
+}
+
 
 # my_project/settings.py
 LOGIN_REDIRECT_URL = 'home'
